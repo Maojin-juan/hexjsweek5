@@ -46,5 +46,5 @@ export function addTicket(data, displayData) {
   data.push(newTicket);
   displayData(data);
 
-  Object.values(ticketInputs).forEach(input => input.value = "");
+  Object.values(ticketInputs).forEach((input) => (input.value = ""));
 }

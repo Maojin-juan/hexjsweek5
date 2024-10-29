@@ -18,7 +18,7 @@ fetchData()
 
 const ticketCardArea = document.getElementById("ticketCardArea");
 const searchResultNum = document.getElementById("searchResultNum");
-const addTicketButton = document.querySelector(".addTicketBtn");
+const addTicketButton = document.getElementById("addTicketBtn");
 
 // 顯示資料的函數
 export function displayData(dataToDisplay) {
