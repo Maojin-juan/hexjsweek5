@@ -1,8 +1,8 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
+  base: "/jsWeek5/",
   server: {
-    // open: "pages/index.html",
     open: true,
   },
   outDir: "dist",
