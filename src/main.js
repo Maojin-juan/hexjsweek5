@@ -1,3 +1,3 @@
 import "./style.css";
 
-import "./js/filterAndRender.js";
+import "./js/listRender.js";
