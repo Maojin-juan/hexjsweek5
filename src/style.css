@@ -5,7 +5,7 @@
 @layer base {
   html,
   body {
-    @apply leading-relaxed;
+    @apply leading-normal;
   }
 }
 
