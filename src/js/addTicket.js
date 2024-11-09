@@ -1,12 +1,4 @@
-const ticketInputs = {
-  name: document.getElementById("ticketName"),
-  imgUrl: document.getElementById("ticketImgUrl"),
-  region: document.getElementById("ticketRegion"),
-  description: document.getElementById("ticketDescription"),
-  price: document.getElementById("ticketPrice"),
-  num: document.getElementById("ticketNum"),
-  rate: document.getElementById("ticketRate"),
-};
+import { ticketInputs } from "./domElements.js";
 
 // 清空輸入框的函數
 function clearInputs() {
@@ -44,7 +36,7 @@ export function addTicket(data, displayData) {
   }
 
   const newTicket = {
-    id: Date.now(),
+    // id: crypto.randomUUID(),
     name: ticketName,
     imgUrl: ticketImgUrl,
     area: ticketRegion,

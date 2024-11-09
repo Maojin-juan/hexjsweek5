@@ -2,7 +2,6 @@ export function createTicketCard(item) {
   const li = document.createElement("li");
   li.className =
     "mx-[5%] mb-[30px] w-[90%] rounded-[5px] border border-[#dee2e6] bg-white shadow-md sm:mx-[2%] sm:mb-[40px] sm:w-[46%] md:mb-[38px] md:ml-0 md:w-[31.3333%]";
-  li.setAttribute("data-id", item.id);
   const imgUrl = item.imgUrl || "https://via.placeholder.com/150";
   li.innerHTML = `
     <div class="ticketCardImg relative">
