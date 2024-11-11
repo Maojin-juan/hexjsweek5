@@ -7,6 +7,7 @@ import {
   searchResultNum,
   addTicketButton,
 } from "./domElements.js";
+import { generateChart } from "./chart";
 
 const regionSearch = document.getElementById("regionSearch");
 
@@ -16,11 +17,11 @@ let data = []; // 將 data 定義為全局變數，並初始化為空陣列
 const loadData = async () => {
   try {
     const responseData = await fetchData();
-    data = responseData.data;
-    console.log("Fetched data:", data);
+    data = responseData.data; // 假設這裡獲取的數據是物件陣列
     displayData(data);
   } catch (error) {
     console.error("Error fetching data:", error);
+    return [];
   }
 };
 
@@ -38,6 +39,7 @@ export function displayData(dataToDisplay) {
 
   ticketCardArea.appendChild(fragment); // 一次性將所有票券卡片添加到 DOM
   searchResultNum.textContent = ` ${dataToDisplay.length} `;
+  generateChart(data);
 }
 
 // 篩選功能
